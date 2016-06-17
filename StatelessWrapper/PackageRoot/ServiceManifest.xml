@@ -20,6 +20,7 @@
     </EntryPoint>
   </CodePackage>
 
+  <!-- Code package of the guest executable. -->
   <CodePackage Name="WebServer"
                Version="1.0.0">
     <EntryPoint>
@@ -41,6 +42,8 @@
            listen. Please note that if your service is partitioned, this port is shared with 
            replicas of different partitions that are placed in your code. -->
       <Endpoint Name="ServiceEndpoint" />
+       <!-- This endpoint is used by the guest executable. The port exposed here must match the
+            port required by the guest executable (here 8080). -->
       <Endpoint Name="WebServerEndpoint"
                 Port="8080"
                 Protocol="http"
