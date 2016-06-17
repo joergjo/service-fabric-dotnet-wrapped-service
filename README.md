@@ -1,0 +1,2 @@
+# service-fabric-dotnet-wrapped-service
+A simple Service Fabric app that shows how to deploy a guest executable as a code package side-by-side with a native Service Fabric service. This can be useful if you need to wrap a guest executable with a native Service Fabric service (either stateless or stateful), but don't want to expose the executable as an individual service in Service Fabric. This sample shows to include and configure the guest executable in a (Stateless) Service Fabric service Visual Studio 2015 project.
